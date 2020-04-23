@@ -1,0 +1,214 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.2.0/css/all.min.css">
+  <title>Bootstrap Example</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+  #body{
+  background-color: #E6E6FA;
+}
+#info{
+  color:white;
+}
+#navbar{
+position:fixed;
+top:0;
+width:100%;
+  z-index:1;
+}
+#welcome-section{
+margin-top:8em;
+  height:100vh;
+}
+#projects{
+text-align:center;
+  position: relative;
+  height:100vh;
+}
+#pro{
+  position: relative;
+  width: 300px;
+  height: 220px;
+}
+.profile_pic{
+  position:relative;
+  top:-200px;
+  right:-1000px;
+  z-index: -1;
+}
+#profile_pic{
+  width: 300px;
+  height: 450px;
+}
+#welcome-section h1{
+  text-align:center;
+}
+#welcome-section h4{
+  text-align:center;
+}
+#contacts{
+  height:100vh;
+}
+#contacts div a{
+  font-size: 30px;
+  letter-spacing: 10px;
+  color:black;
+}
+#web_profiles{
+  text-align:center;
+}
+#pro_button ul {
+    display: flex;
+    justify-content: center;
+    z-index:-1;
+    list-style: none;
+}
+#pro_button ul li a {
+    width: 80px;
+    height: 80px;
+    background: #f5f5f5;
+    text-align: center;
+    font-size: 40px;
+    margin: 0 10px;
+    display: block;
+    border-radius: 50%;
+}
+.fab{
+line-height:80px;
+}
+@media only screen and (max-width: 600px) {
+  body {
+    
+  }
+}
+</style>
+
+<!DOCTYPE html>
+<body id="body">
+<nav id="navbar" class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Kshitiz Deep</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#welcome-section">Home</a></li>
+      <li><a href="#">Resume</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a id="info" class="btn-info" href="#contacts">Contacts</a></li>
+    </ul>
+  </div>
+</nav>
+  
+  <!--page1-->
+  <div id="welcome-section" class="">
+    <h1>I'am Kshitiz.</h1>
+      <h4>web developer</h4>
+    <div id="web_profiles">
+      <h3>My Profiles</h3>
+          <div class="conatainer-fluid" id="pro_button">  
+      <ul>
+          <li><a href="https://www.freecodecamp.org/kshitizdeep" target="_blank"><i class="fab fa-free-code-camp"></i></a></li>
+          <li><a id="profile-link" href="https://github.com/kshitizdeep1" target="_blank"><i class="fab fa-github"></i></a></li>
+          <li><a href="https://www.linkedin.com/in/kshitiz-deep-37193613a/" target="_blank"><i class="fab fa-linkedin" ></i></a></li>
+          <li><a href="https://www.hackerrank.com/kshitizdeep1" target="_blank"><i class="fab fa-hackerrank"></i></a></li>
+          <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+      </ul> 
+    </div>
+      </div>
+      <div class="profile_pic"> 
+      <img id="profile_pic" class="img-responsive" src="https://raw.githubusercontent.com/kshitizdeep1/trash/master/kirito1.jpg">
+    </div>
+    </div>
+  <!--page2-->
+  <div id="projects">
+    <h2>My projects on freecode camp and spring boot.</h2>
+    <div class="row">
+    <div class="col-md-4 project-tile">
+      <div class="">
+        <a href="" target="_blank">
+          <img id="pro" src="https://raw.githubusercontent.com/kshitizdeep1/trash/master/abstract-space-background_1217-1046.jpg" alt="universe" class="img-thumbnail">
+          <div class="caption">
+            <p>Shopping Cart</p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="">
+        <a href="" target="_blank">
+          <img id="pro" src="https://raw.githubusercontent.com/kshitizdeep1/trash/master/abstract-space-background_1217-1046.jpg" alt="universe" class="img-thumbnail">
+          <div class="caption">
+            <p>Spring Boot</p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="">
+        <a href="https://kshitizdeep1.github.io/webpages/tribute_Srinivasa_Ramanujan.html" target="_blank">
+          <img id="pro" src="https://raw.githubusercontent.com/kshitizdeep1/trash/master/abstract-space-background_1217-1046.jpg" alt="universe" class="img-thumbnail">
+          <div class="caption">
+            <p>Tribute Page</p>
+          </div>
+        </a>
+      </div>
+    </div>
+          <div class="col-md-4">
+      <div class="">
+        <a href="" target="_blank">
+          <img id="pro" src="https://raw.githubusercontent.com/kshitizdeep1/trash/master/abstract-space-background_1217-1046.jpg" alt="universe" class="img-thumbnail">
+          <div class="caption">
+            <p>Empty</p>
+          </div>
+        </a>
+      </div>
+    </div>
+          <div class="col-md-4">
+      <div class="">
+        <a href="" target="_blank">
+          <img id="pro" src="https://raw.githubusercontent.com/kshitizdeep1/trash/master/abstract-space-background_1217-1046.jpg" alt="universe" class="img-thumbnail">
+          <div class="caption">
+            <p>Empty</p>
+          </div>
+        </a>
+      </div>
+    </div>
+          <div class="col-md-4">
+      <div class="">
+        <a href="" target="_blank">
+          <img id="pro" src="https://raw.githubusercontent.com/kshitizdeep1/trash/master/abstract-space-background_1217-1046.jpg" alt="Fjords" class="img-thumbnail">
+          <div class="caption">
+            <p>Empty</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+  </div>
+  <!--page3-->
+    <div id="contacts">
+      <div class="pageFour" id="contact_me">
+    <div class="container" id="msg">
+    <h1>Contact Me</h1>
+    <form>
+        <div class="form-group">
+              <label id="name-label" for="name">Name</label>
+                <input class="form-control" type="text" id="name" name="name" placeholder="Enter your name" required autofocus>
+        </div>
+        <div class="form-group">
+              <label id="email-label" for="email">Email</label>
+                <input class="form-control" type="email" id="email" name="email" placeholder="Enter email here" required>
+        </div>
+        <div class="form-group">
+              <p>Message</p>
+              <textarea class="form-control" name="mytext" rows="8" cols="80" placeholder="Your text here"></textarea>
+        </div>   
+      
+        <button type="submit" class="btn btn-success pull-right">Submit</button>
+    </form>
+    </div>    
+    </div>
+  </div>
+</body>
