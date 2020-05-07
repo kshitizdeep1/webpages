@@ -1,0 +1,134 @@
+<style>
+h1{
+  color:white;
+  text-align:center;
+}
+#title1 p{
+  color:white;
+}
+h4,p{
+  text-align:center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body{
+
+}
+#inner_block{
+  font-family: Arial, Helvetica, sans-serif;
+  width:50%;
+  position:relative;
+  margin-left:25%;
+  margin-right:25%;
+  display:block;
+  border:solid black;
+    background-image: linear-gradient(to right, yellow , #BAF429);
+}
+#comments{
+  text-align:center;
+}
+@media (max-width: 576px){
+  #inner_block{
+    margin-left:10px;
+    width:90%;
+  }
+  #background{
+    min-height: -webkit-fill-available;
+  }
+}
+span{
+  color:red;
+}
+#background{
+  z-index:-1;
+  width:100vw;
+  height=100vh;
+  position:fixed;
+}
+</style>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<!-- 
+
+Hello Camper!
+
+For now, the test suite only works in Chrome! Please read the README below in the JS Editor before beginning. Feel free to delete this message once you have read it. Good luck and Happy Coding! 
+
+- The freeCodeCamp Team 
+
+-->
+<div id="background">
+  <img id="background" src="https://raw.githubusercontent.com/kshitizdeep1/trash/master/abstract-space-background_1217-1046.jpg">
+</div>
+<div>
+<div id="title1">
+    <h1 id="title">Website Survey</h1>
+  <p id="description">Thank you for taking this survey.</p>
+</div>
+  <div id="inner_block">
+  <div>
+    <form id="survey-form" class="">
+      <div class="form-group">      
+      <label id="name-label" for="name" class="">Name</label><span>*</span><p>
+      <input class="form-control" type="text" id="name" placeholder="Enter Full Name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label id="email-label" for="email">Email Id</label><span>*</span><p>
+      <input type="email" class="was-validated form-control" id="email" placeholder="Ex:-abc@example.com" name="name" required>
+      </div>
+            <div>
+        <label id="number-label" for="age" class="required">Age</label><span>*</span>
+      <input type="number" class="was-validated age" id="number" placeholder="age"size="6" name="age" min="18" max="99" name="age" required>
+      </div>
+      <div>
+        <label id="gender-label" for="gender" class="required">Select Gender</label>
+        <select id="dropdown" name="cars">
+  <option value="male">Male</option>
+  <option value="female">Female</option>
+          <option value="female">Third Gender</option>
+</select>
+        
+      </div>
+      <div>
+        <h4>How Much do you like this web page</h4>
+          <input type="radio" id="very_good" name="rating" value="very_good">
+  <label for="very_good">Very Good</label><br>
+  <input type="radio" id="good" name="rating" value="good">
+  <label for="good">Good</label><br>
+  <input type="radio" id="bad" name="rating" value="bad">
+  <label for="bad">Bad</label><br>
+          <input type="radio" id="bad" name="rating" value="worst">
+  <label for="worst">Worst</label>
+      </div>
+      <div>
+        <h4>Suggestion for improvement</h4>
+          <input type="checkbox" id="navbar" name="navbar" value="navbar">
+  <label for="navbar"> Attractive Navigation bar.</label><br>
+  <input type="checkbox" id="contents" name="contents" value="contents">
+  <label for="contents"> More content.</label><br>
+  <input type="checkbox" id="content1" name="content1" value="content1">
+  <label for="content1"> More Styles and features.</label><br>
+          <input type="checkbox" id="content3" name="content3" value="content3">
+  <label for="content3"> Footer should be more attractive.</label><br>
+      </div>
+      <div id="comments">
+        <h4>Comments</h4>
+        <p>plese let us know if you have any more suggestion.</p>
+        <textarea>
+        </textarea>
+      </div>
+      <input class="btn btn-success btn-block" id="submit" type="submit" value="Submit">
+    </form>
+  </div>
+  </div>
+</div>
